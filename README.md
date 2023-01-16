@@ -4,7 +4,7 @@
 
   
 
-  <img src="C:\Users\99596\Desktop\EpiMut workflow.png" alt="EpiMut workflow" style="zoom:50%;" />
+  <img src="./workflow.png" alt="EpiMut workflow" style="zoom:50%;" />
 
   
 
