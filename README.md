@@ -156,7 +156,7 @@
                                like "julia -t 20 ***.jl ...". [Default: 1]
        ```
 
-     - **Example**: `julia -t 20 calculatePDR.jl -b Sample.bam -g genome.fa -r 4 -c 1 -R true -n pdr -o /share/home/zhangchunyong/EpiMutresult `
+     - **Example**: `julia -t 20 calculatePDR.jl -b Sample.bam -g genome.fa -r 4 -c 1 -R true -n pdr -o /share/home/zhangchunyong/EpiMutresult`
 
      1. 2 **calculate MCR**:   
 
@@ -239,8 +239,7 @@
                                     like "julia -t 20 ***.jl ...". [Default: 1]
         ```
       
-      - **Example**: `julia -t 20 DiffAnalysis.jl -i Sample.txt -b region.bed -H true -a false -r 5 -n diffanalysis -o /share/home/zhangchunyong/EpiMutresult `
-  
+      - **Example**: `julia -t 20 DiffAnalysis.jl -i Sample.txt -b region.bed -H true -a false -r 5 -n diffanalysis -o /share/home/zhangchunyong/EpiMutresult`
   
     3. **Volcano Plot**：
   
@@ -259,9 +258,8 @@
          -o      --outputfile        Input output file path.
          ```
   
-       - **Example**: `julia VolcanoPlot.jl -i diff.csv -d 0.2 -p 0.05 -n volcano -o /share/home/zhangchunyong/EpiMutresult ` 
-  
-  
+       - **Example**: `julia VolcanoPlot.jl -i diff.csv -d 0.2 -p 0.05 -n volcano -o /share/home/zhangchunyong/EpiMutresult` 
+
   4. **Circo Plot**
   
      - **Description**: This program is for drawing circle plot using cgmaptools tanghulu after differential analysis. Make sure your CGmaptools and SAMtools were installed. We try to search your CGmaptools and SAMtools.
@@ -304,7 +302,7 @@
        ```
   
   
-     - **Example**: `julia LOLA.jl -i diff.csv -p 0.05 -r /share/home/zhangchunyong/hg38 -n lola -o /share/home/zhangchunyong/EpiMutresult  `  
+     - **Example**: `julia LOLA.jl -i diff.csv -p 0.05 -r /share/home/zhangchunyong/hg38 -n lola -o /share/home/zhangchunyong/EpiMutresult`  
   
   6. **GO analysis** 
   
@@ -326,7 +324,7 @@
           -o      --outputfile        Input output file path.
           ```
   
-        - **Example**: `julia GO.jl -i significant.bed -t tss.bed -d 1000 -s hg -p 0.05 -q 0.2 -n up_go -o /share/home/zhangchunyong/EpiMutresult ` 
+        - **Example**: `julia GO.jl -i significant.bed -t tss.bed -d 1000 -s hg -p 0.05 -q 0.2 -n up_go -o /share/home/zhangchunyong/EpiMutresult` 
 
 **Tips**:
 
