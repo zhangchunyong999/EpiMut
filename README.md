@@ -217,7 +217,7 @@
      
      - **Example**: `julia -t 20 calculateqFDRP.jl -b Sample.bam -g genome.fa -m 35 -w 50 -r 2 -c 2 -R true -n qfdrp -o /share/home/zhangchunyong/EpiMutresult`
   
-   2. **Differential analysis**：
+   2. **Differential analysis**:
   
       - **Description**: This program is for differential analysis between 2 groups using unpaired two-tailed Student's t-test.
       
@@ -241,7 +241,7 @@
       
       - **Example**: `julia -t 20 DiffAnalysis.jl -i Sample.txt -b region.bed -H true -a false -r 5 -n diffanalysis -o /share/home/zhangchunyong/EpiMutresult`
   
-    3. **Volcano Plot**：
+    3. **Volcano Plot**:
   
        - **Description**: This program is for drawing volcano plot after differential analysis.
   
@@ -260,7 +260,7 @@
   
        - **Example**: `julia VolcanoPlot.jl -i diff.csv -d 0.2 -p 0.05 -n volcano -o /share/home/zhangchunyong/EpiMutresult` 
 
-  4. **Circo Plot**
+  4. **Circo Plot**:
   
      - **Description**: This program is for drawing circle plot using cgmaptools tanghulu after differential analysis. Make sure your CGmaptools and SAMtools were installed. We try to search your CGmaptools and SAMtools.
        
@@ -283,7 +283,7 @@
   
      - **Example**: `julia CircoPlot.jl -b Sample.bam -g genome.fa -c chr1 -s 2000 -e 4000 -n circoplot -o /share/home/zhangchunyong/EpiMutresult ` 
   
-  5. **LOLA**
+  5. **LOLA**:
   
      - **Description**: This program is for the locus overlap analysis (LOLA) after differential analysis. Make sure your R has installed LOLA, ggplot2 package.
   
@@ -304,7 +304,7 @@
   
      - **Example**: `julia LOLA.jl -i diff.csv -p 0.05 -r /share/home/zhangchunyong/hg38 -n lola -o /share/home/zhangchunyong/EpiMutresult`  
   
-  6. **GO analysis** 
+  6. **GO analysis**:
   
         - **Description**: This program is for gene ontology analysis after differential analysis. Make sure your BEDtools was installed. We try to search your BEDtools. Also make sure your R has installed clusterprofiler, org.Hs.eg.db / org.Mm.eg.db, ggplot2 package.
   
